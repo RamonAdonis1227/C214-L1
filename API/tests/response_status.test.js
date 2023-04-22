@@ -13,15 +13,15 @@ test('Status Code BAD REQUEST - Case Error Validation', () => {
 
 test('Status Code CONFLICT - Case Error Duplicate', () => {
     const result = Utils.responseStatus(Constants.ErrorDuplicate.name);
-    expect(result).toEqual(400);
+    expect(result).toEqual(409);
 });
 
 test('Status Code NOT FOUND - Case Error NotFound', () => {
     const result = Utils.responseStatus(Constants.ErrorNotFound.name);
-    expect(result).toEqual(400);
+    expect(result).toEqual(404);
 });
 
 test('Status Code NOT FOUND - Case Error ErrorMongo', () => {
     const result = Utils.responseStatus(Constants.ErrorMongo);
-    expect(result).toEqual(400);
+    expect(result).toEqual(500);
 });

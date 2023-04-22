@@ -1,10 +1,10 @@
-# Tarefa 5 - API Filmes
+# Tarefa 5 e 6 - API Filmes
 
-Esse código é dedicado a tarefa 5 solicitada pelo monitor, que era a criação de uma API de Filmes.
+Esse código é dedicado as tarefas subsequentes a tarefa 5 que foram solicitadas pelo monitor, que é a criação de uma API de Filmes, e testes unitários da mesma.
 
 ## Pré-requisitos
 
-- É necessário possuir ferramentas que tem suporte para JavaScript, além do progama POSTMAN, onde é realizada a execução da API.
+- É necessário possuir ferramentas que tem suporte para JavaScript e JEST, além do progama POSTMAN, onde é realizada a execução da API.
 
 ## Como executar
 
@@ -22,7 +22,7 @@ Esse código é dedicado a tarefa 5 solicitada pelo monitor, que era a criação
 
 - Depois, vá para o POSTMAN, e faça a conexão com a porta que você escolheu, no meu caso eu escolhi a 5000, então ficou assim: http://localhost:5000/users/.
 
-- Enfim, pode utilizar o POSTMAN para fazer a criação de dados no banco de dados, remoção, atualização, e também mostrar tudo que tem no banco.
+- Enfim, podemos utilizar o POSTMAN para fazer a criação de dados no banco de dados, remoção, atualização, e também mostrar tudo que tem no banco.
 
 - Para criar, usaremos o método create, que é do tipo POST, com a seguinte URL: http://localhost:5000/users/create
 
@@ -32,9 +32,22 @@ Esse código é dedicado a tarefa 5 solicitada pelo monitor, que era a criação
 
 - Também podemos mostrar de acordo com uma das características do filme, no meu caso, coloquei a produtora, ai usamos a URL: http://localhost:5000/users/listUser, e passamos o nome da produtora que queremos ver.
 
-- Por ultimo, temos o método update, que é do tipo PUT, com a seguinte URL: http://localhost:5000/users/update.
+- Temos também o método update, que é do tipo PUT, com a seguinte URL: http://localhost:5000/users/update.
 
 
+
+## Como testar
+
+- Para testar o código, primeiramente temos que instalar a ferramenta JEST juntamente com suas dependências, com os seguintes comandos no terminal:
+
+- npm install jest
+- npm install --save jest
+
+- Logo após, já podemos testar o código com os testes unitários que foram criados, utilizando o seguinte comando no terminal:
+
+- npm test
+
+- Assim, ele começará a realizar os testes unitários, e logo em sequência mostrará o resultado dos testes no terminal.
 
 ##
 
