@@ -32,6 +32,12 @@ const update = {
         },
         type: 'string',
     },
+    atores: {
+        presence: {
+            allowEmpty: false,
+        },
+        type: 'string',
+    },
     produtora: {
         presence: {
             allowEmpty: false,
@@ -39,12 +45,6 @@ const update = {
         type: 'string',
     },
     ano: {
-        presence: {
-            allowEmpty: false,
-        },
-        type: 'string',
-    },
-    atores: {
         presence: {
             allowEmpty: false,
         },

@@ -31,7 +31,7 @@ const UsersRepository = {
 
     async delete(data) {
         try {
-            const result = await UsersModel.deleteOne({ email: data.email }).exec();
+            const result = await UsersModel.deleteOne({ produtora: data.produtora }).exec();
             return result.deletedCount;
         } catch (error) {
             return error;
@@ -47,9 +47,9 @@ const UsersRepository = {
         }
     },
 
-    async getByEmail(data) {
+    async getByProdutora(data) {
         try {
-          const result = await UsersModel.findOne({ email: data.email }).exec();
+          const result = await UsersModel.findOne({ produtora: data.produtora }).exec();
           return result;
         } catch (e) {
           return e;

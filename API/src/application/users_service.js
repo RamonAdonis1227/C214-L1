@@ -1,7 +1,7 @@
 const validate = require('validate.js');
 
 const Utils = require('../utils/utils');
-const Constants = require('../utils/constants');
+const Constants = require('../utils/Constants');
 const UsersRepository = require('../port/users_repository');
 const Constraints = require('../utils/users_validation');
 const Validation = require('../utils/validation');
@@ -66,7 +66,7 @@ const Users = {
         }
     },
 
-    async listByEmail(data) {
+    async listByProdutora(data) {
         try {
             const validation = validate.validate(data, Constraints.get);
             if (validation) {
@@ -75,7 +75,7 @@ const Users = {
                 return response;
             }
 
-            const response = await UsersRepository.getByEmail(data);
+            const response = await UsersRepository.getByProdutora(data);
 
             return response;
         } catch (error) {

@@ -10,3 +10,18 @@ test('Status Code BAD REQUEST - Case Error Validation', () => {
     const result = Utils.responseStatus(Constants.ErrorValidation.name);
     expect(result).toEqual(400);
 });
+
+test('Status Code CONFLICT - Case Error Duplicate', () => {
+    const result = Utils.responseStatus(Constants.ErrorDuplicate.name);
+    expect(result).toEqual(400);
+});
+
+test('Status Code NOT FOUND - Case Error NotFound', () => {
+    const result = Utils.responseStatus(Constants.ErrorNotFound.name);
+    expect(result).toEqual(400);
+});
+
+test('Status Code NOT FOUND - Case Error ErrorMongo', () => {
+    const result = Utils.responseStatus(Constants.ErrorMongo);
+    expect(result).toEqual(400);
+});

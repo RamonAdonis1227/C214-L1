@@ -2,6 +2,9 @@ const Constants = {
     ErrorValidation: {
         name: 'ValidationError',
         message: '',
+        produtora: 'ProdutoraError',
+        ano: 'AnoError',
+        atores: 'AtoresError'
     },
 
     ErrorMongo: {
