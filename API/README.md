@@ -8,7 +8,13 @@ Esse código é dedicado as tarefas subsequentes a tarefa 5 que foram solicitada
 
 ## Como executar
 
-- A partir do momento que você abrir o terminal, é necessario dar um npm install para instalar todas as dependências necessárias para execução do código, elas serão instaladas automaticamente, porém, repassando elas, são:
+- A partir do momento que você abrir o terminal, vá até a pasta "API" utilizando os seguintes comandos:
+
+ - cd "pasta destino" (esse comando é para você abrir a pasta de desejo)
+
+ - ls (esse comando é para você ver aonde você está e as pastas que você pode abrir)
+
+ Após abrir a pasta "API", é necessario dar um npm install para instalar todas as dependências necessárias para execução do código, elas serão instaladas automaticamente, porém, repassando elas, são:
 
  - npm install --save express
  - npm install --save cors
